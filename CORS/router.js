@@ -15,7 +15,7 @@ app.get('/getNews', function(req, res){
         data.push(news[index]);
         news.splice(index, 1);
     }
-    res.header("Access-Control-Allow-Origin", "http://a.ji.com:8080"); 
+    res.header("Access-Control-Allow-Origin", "http://a.com:8080"); 
     //res.header("Access-Control-Allow-Origin", "*"); 
     res.send(data);
 })
